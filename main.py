@@ -111,8 +111,9 @@ async def download_tweet(message: types.Message):
                     media_group.attach_photo(image_url)
 
                 await Cli.send_media_group(message.chat.id, media_group, reply_to_message_id=message.message_id)
-    except NotFound:
+    except NotFound as e:
         await message.reply("Tweet not found")
+        print(e)
     except Forbidden:
         await message.reply("Forbidden")
     except Exception as e:
