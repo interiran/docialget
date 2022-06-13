@@ -65,6 +65,7 @@ async def download_tweet(message: types.Message):
         print(status_id)
         tweet = TwitterAPI()
         tweet_info = tweet.get_status(status_id)
+        print(tweet_info)
         tweet_text = tweet_info['full_text']
         favorite_count = tweet_info['favorite_count']
         retweet_count = tweet_info['retweet_count']
