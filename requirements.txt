@@ -1,0 +1,9 @@
+instagrapi
+requests
+aiofiles
+aiohttp
+aiogram
+numerize
+aiohttp_socks
+wget
+pillow
