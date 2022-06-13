@@ -14,7 +14,7 @@ INSTA_SESSION = "51209710385%3AGrtJvXtvzFwHDK%3A11"
 INSTAGRAM_POST_PATTERN = "^(https?:\\/\\/(?:www\\.)?instagram\\.com(?:\\/(?!.*\\.\\.)(?!.*\\.$)[^\\W][\\w.]{2,29})?\\/(?:p|tv|reel)\\/([^/?#&]+)).*$"
 INSTAGRAM_STORY_URL_PATTERN = "^(https?:\\/\\/(?:www\\.)?instagram\\.com(?:\\/(?!.*\\.\\.)(?!.*\\.$)[^\\W][\\w.]{2,29})?\\/stories\\/([^/?#&]+)).*$"
 INSTAGRAM_PROFILE_URL_PATTERN = "^(https?:\\/\\/(?:www\\.)?instagram\\.com(?:\\/(?!.*\\.\\.)(?!.*\\.$)[^\\W][\\w.]{2,29})?\\/([^/?#&]+)).*$"
-TWITTER_TWEET_PATTERN_WITH_ONE_ESCAPE = "^(https?:\/\/(?:www\.)?(?:mobile\.)?twitter\.com(?:\/(?!.*\.\.)(?!.*\\.$)[^\W][\w.]{2,29})?\/status(es)?\/([\d+]{16,18}))"
+TWITTER_TWEET_PATTERN_WITH_ONE_ESCAPE = "^(https?:\/\/(?:www\.)?(?:mobile\.)?twitter\.com(?:\/(?!.*\.\.)(?!.*\\.$)[^\W][\w.]{2,29})?\/status(es)?\/([\d+]{16,19}))"
 
 Cli = Bot(token=API_TOKEN, parse_mode=types.ParseMode.HTML)
 dp = Dispatcher(Cli)
